@@ -1,31 +1,40 @@
 package vn.edu.iuh.fit.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import vn.edu.iuh.fit.enums.ProductStatus;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
-public class Product {
+@Table(name = "product")
+public class Product implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
+    @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
+    @Column(name = "product_id",columnDefinition = "BIGINT(20)")
     private long product_id;
+    @Column(name = "name",columnDefinition = "VARCHAR(150)")
     private String name;
+    @Column(name = "manufacturer_name",columnDefinition = "VARCHAR(100)")
     private String manufacturer;
+    @Column(name = "description",columnDefinition = "VARCHAR(250)")
     private String description;
+    @Column(name = "unit",columnDefinition = "VARCHAR(25)")
     private String unit;
+    @Column(name = "status",columnDefinition = "INT(11)")
     private ProductStatus status;
-    @OneToMany
-    private List<OrderDetails> orderDetails;
-    @OneToMany
-    private List<productImage> productImageList;
+    @OneToMany(mappedBy = "product",cascade = jakarta.persistence.CascadeType.ALL)
+    private List<OrderDetail> orderDetails;
+    @OneToMany(mappedBy = "product",cascade = jakarta.persistence.CascadeType.ALL)
+    private List<ProductImage> productImageList;
+    @OneToMany(mappedBy = "product",cascade = jakarta.persistence.CascadeType.ALL)
+    public List<ProductPrice> productPrices;
 
     public Product() {
     }
 
-    public Product(long product_id, String name, String manufacturer, String description, String unit, ProductStatus status) {
-        this.product_id = product_id;
+    public Product(String name, String manufacturer, String description, String unit, ProductStatus status) {
         this.name = name;
         this.manufacturer = manufacturer;
         this.description = description;

@@ -30,6 +30,15 @@ dependencies {
     implementation 'org.slf4j:slf4j-api:2.0.9'
     implementation 'org.slf4j:slf4j-simple:2.0.9'
 
+    //for REST API on Tomcat
+    implementation 'org.glassfish.jersey.containers:jersey-container-servlet:3.1.2'
+    implementation 'org.glassfish.jersey.inject:jersey-cdi2-se:3.1.2'
+    implementation 'org.glassfish.jersey.media:jersey-media-json-jackson:3.1.2'
+    implementation 'org.jboss.weld.se:weld-se-core:5.1.0.Final'
+
+    //for convert datetime to string
+//    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.5'
+
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }

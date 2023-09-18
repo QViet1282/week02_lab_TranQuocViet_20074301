@@ -1,26 +1,32 @@
 package vn.edu.iuh.fit.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
-public class Customer {
+@Table(name = "customer")
+public class Customer implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "cust_id",columnDefinition = "BIGINT(20)")
     private long id;
+    @Column(name = "address", columnDefinition = "VARCHAR(250)")
     private String address;
+    @Column(name = "email",columnDefinition = "VARCHAR(150)", unique = true)
     private String email;
+    @Column(name = "cust_name", columnDefinition = "VARCHAR(150)")
     private String name;
+    @Column(name = "phone",columnDefinition = "VARCHAR(15)")
     private String phone;
-    @OneToMany
+    @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL)
     private List<Order> orderList;
     public Customer() {
     }
 
-    public Customer(long id, String address, String email, String name, String phone) {
-        this.id = id;
+    public Customer(String address, String email, String name, String phone) {
         this.address = address;
         this.email = email;
         this.name = name;

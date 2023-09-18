@@ -1,31 +1,40 @@
 package vn.edu.iuh.fit.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import vn.edu.iuh.fit.enums.EmployeeStatus;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 @Entity
-public class Employee {
+@Table(name = "employee")
+public class Employee implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
-    private long emp_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "emp_id",columnDefinition = "BIGINT(20)")
+    private long id;
+    @Column(name = "address",columnDefinition = "VARCHAR(250)")
     private String address;
+    @Column(name = "dob",columnDefinition = "DATETIME(6)")
     private LocalDateTime dob;
+    @Column(unique = true,columnDefinition = "VARCHAR(150)",name = "email")
     private String email;
+    @Column(name = "full_name", columnDefinition = "VARCHAR(150)")
     private String fullName;
+    @Column(name = "phone",columnDefinition = "VARCHAR(15)")
     private String phone;
+    @Column(name = "status",columnDefinition = "INT(15)")
     private EmployeeStatus status;
-    @OneToMany
+    @OneToMany(mappedBy = "employee",cascade = CascadeType.ALL)
     private List<Order> lstOrder;
 
     public Employee() {
     }
 
-    public Employee(long emp_id, String address, LocalDateTime dob, String email, String fullName, String phone, EmployeeStatus status) {
-        this.emp_id = emp_id;
+    public Employee(String address, LocalDateTime dob, String email, String fullName, String phone, EmployeeStatus status) {
         this.address = address;
         this.dob = dob;
         this.email = email;
@@ -34,12 +43,12 @@ public class Employee {
         this.status = status;
     }
 
-    public long getEmp_id() {
-        return emp_id;
+    public long getId() {
+        return id;
     }
 
-    public void setEmp_id(long emp_id) {
-        this.emp_id = emp_id;
+    public void setId(long emp_id) {
+        this.id = emp_id;
     }
 
     public String getAddress() {
@@ -93,7 +102,7 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                "emp_id=" + emp_id +
+                "emp_id=" + id +
                 ", address='" + address + '\'' +
                 ", dob=" + dob +
                 ", email='" + email + '\'' +

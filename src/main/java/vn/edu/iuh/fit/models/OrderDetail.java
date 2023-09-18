@@ -1,25 +1,36 @@
 package vn.edu.iuh.fit.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
+
+import java.io.Serializable;
 
 @Entity
-public class OrderDetails {
+@Table(name = "order_detail")
+//@PrimaryKey(columns = {@jakarta.persistence.Column(name = "order_id"), @jakarta.persistence.Column(name = "product_id")})
+//@IdClass(OrderDetailId.class)
+public class OrderDetail implements Serializable {
+    private static final long serialVersionUID = 1L;
+//    @EmbeddedId
+//    public OrderDetailId id;
     @Id
     @ManyToOne
+    @JoinColumn(name = "order_id")
     private Order order;
     @Id
     @ManyToOne
+    @JoinColumn(name = "product_id")
     private Product product;
+    @Column(name = "quantity",columnDefinition = "DOUBLE")
     private double quantity;
+    @Column(name = "price",columnDefinition = "DOUBLE")
     private double price;
+    @Column(name = "note",columnDefinition = "VARCHAR(255)")
     private String note;
 
-    public OrderDetails() {
+    public OrderDetail() {
     }
 
-    public OrderDetails(Order order, Product product, double quantity, double price, String note) {
+    public OrderDetail(Order order, Product product, double quantity, double price, String note) {
         this.order = order;
         this.product = product;
         this.quantity = quantity;

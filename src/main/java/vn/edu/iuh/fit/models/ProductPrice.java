@@ -1,18 +1,22 @@
 package vn.edu.iuh.fit.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "product_price")
 public class ProductPrice {
     @Id
+    @Column(name = "price_date_time",columnDefinition = "DATETIME(6)")
     private LocalDateTime price_date_time;
+    @Column(name = "note",columnDefinition = "VARCHAR(255)")
     private String note;
+    @Column(name = "price",columnDefinition = "DOUBLE")
     private double price;
+    @Id
     @ManyToOne
+    @JoinColumn(name = "product_id",referencedColumnName = "product_id",columnDefinition = "BIGINT(20)")
     private Product product;
 
     public ProductPrice() {

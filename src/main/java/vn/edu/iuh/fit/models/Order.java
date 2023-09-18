@@ -1,29 +1,33 @@
 package vn.edu.iuh.fit.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
-public class Order {
+@Table(name = "orders")
+public class Order implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="order_id",columnDefinition = "BIGINT(20)")
     private long order_id;
+    @Column(name = "order_date",columnDefinition = "DATETIME(6)")
     private LocalDateTime orderDate;
     @ManyToOne
+    @JoinColumn(name = "emp_id",referencedColumnName = "emp_id",columnDefinition = "BIGINT(20)")
     private Employee employee;
     @ManyToOne
+    @JoinColumn(name = "cust_id",referencedColumnName = "cust_id",columnDefinition = "BIGINT(20)")
     private Customer customer;
-    @OneToMany
-    private List<OrderDetails> orderDetails;
+    @OneToMany(mappedBy = "order",cascade = jakarta.persistence.CascadeType.ALL)
+    private List<OrderDetail> orderDetails;
     public Order() {
     }
 
-    public Order(long order_id, LocalDateTime orderDate) {
-        this.order_id = order_id;
+    public Order(LocalDateTime orderDate) {
         this.orderDate = orderDate;
     }
 

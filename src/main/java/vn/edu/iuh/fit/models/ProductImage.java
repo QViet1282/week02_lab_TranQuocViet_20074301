@@ -1,23 +1,26 @@
 package vn.edu.iuh.fit.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 
 @Entity
-public class productImage {
+@Table(name = "product_image")
+public class ProductImage {
     @Id
+    @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
+    @Column(name = "image_id",columnDefinition = "BIGINT(20)")
     private long image_id;
+    @Column(name = "path",columnDefinition = "VARCHAR(250)")
     private String path;
+    @Column(name = "alternative",columnDefinition = "VARCHAR(250)")
     private String alternative;
     @ManyToOne
+    @JoinColumn(name = "product_id",referencedColumnName = "product_id",columnDefinition = "BIGINT(20)")
     private Product product;
 
-    public productImage() {
+    public ProductImage() {
     }
 
-    public productImage(long image_id, String path, String alternative, Product product) {
-        this.image_id = image_id;
+    public ProductImage(String path, String alternative, Product product) {
         this.path = path;
         this.alternative = alternative;
         this.product = product;
