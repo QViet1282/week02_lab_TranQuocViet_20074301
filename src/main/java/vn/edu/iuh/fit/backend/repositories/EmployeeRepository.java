@@ -1,11 +1,11 @@
-package vn.edu.iuh.fit.repositories;
+package vn.edu.iuh.fit.backend.repositories;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import vn.edu.iuh.fit.models.Employee;
+import vn.edu.iuh.fit.backend.models.Employee;
 
 import java.util.Optional;
 
@@ -19,7 +19,7 @@ public class EmployeeRepository {
         transaction = em.getTransaction();
     }
 
-    public void insertEmployee(Employee employee){
+    public boolean insertEmployee(Employee employee){
         try {
             transaction.begin();
             em.persist(employee);
@@ -27,7 +27,9 @@ public class EmployeeRepository {
         } catch (Exception e) {
             transaction.rollback();
             LOGGER.error(e.getMessage());
+            return false;
         }
+        return true;
     }
 
     public void updateEmployee(Employee employee){

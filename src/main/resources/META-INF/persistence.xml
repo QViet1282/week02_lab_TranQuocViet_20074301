@@ -6,13 +6,13 @@
     <persistence-unit name="my_persistence_unit" >
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 <!--        <exclude-unlisted-classes>false</exclude-unlisted-classes>-->
-        <class>vn.edu.iuh.fit.models.Employee</class>
-        <class>vn.edu.iuh.fit.models.Customer</class>
-        <class>vn.edu.iuh.fit.models.Order</class>
-        <class>vn.edu.iuh.fit.models.Product</class>
-        <class>vn.edu.iuh.fit.models.OrderDetail</class>
-        <class>vn.edu.iuh.fit.models.ProductImage</class>
-        <class>vn.edu.iuh.fit.models.ProductPrice</class>
+        <class>vn.edu.iuh.fit.backend.models.Employee</class>
+        <class>vn.edu.iuh.fit.backend.models.Customer</class>
+        <class>vn.edu.iuh.fit.backend.models.Order</class>
+        <class>vn.edu.iuh.fit.backend.models.Product</class>
+        <class>vn.edu.iuh.fit.backend.models.OrderDetail</class>
+        <class>vn.edu.iuh.fit.backend.models.ProductImage</class>
+        <class>vn.edu.iuh.fit.backend.models.ProductPrice</class>
         <properties>
 
             <property name="jakarta.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>

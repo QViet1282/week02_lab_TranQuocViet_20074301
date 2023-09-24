@@ -19,55 +19,55 @@
           <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Gradle: org.eclipse.persistence:org.eclipse.persistence.jpa:3.0.2" />
-          <element id="library" level="project" name="Gradle: org.mariadb.jdbc:mariadb-java-client:3.2.0" />
-          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-simple:2.0.9" />
-          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:2.0.9" />
-          <element id="library" level="project" name="Gradle: org.glassfish.jersey.containers:jersey-container-servlet:3.1.2" />
-          <element id="library" level="project" name="Gradle: org.glassfish.jersey.media:jersey-media-json-jackson:3.1.2" />
-          <element id="library" level="project" name="Gradle: org.jboss.weld.se:weld-se-core:5.1.0.Final" />
-          <element id="library" level="project" name="Gradle: jakarta.el:jakarta.el-api:5.0.1" />
-          <element id="library" level="project" name="Gradle: jakarta.ws.rs:jakarta.ws.rs-api:3.1.0" />
-          <element id="library" level="project" name="Gradle: jakarta.enterprise:jakarta.enterprise.cdi-api:4.0.1" />
-          <element id="library" level="project" name="Gradle: jakarta.interceptor:jakarta.interceptor-api:2.1.0" />
-          <element id="library" level="project" name="Gradle: jakarta.annotation:jakarta.annotation-api:2.1.1" />
-          <element id="library" level="project" name="Gradle: jakarta.validation:jakarta.validation-api:3.0.2" />
-          <element id="library" level="project" name="Gradle: jakarta.enterprise:jakarta.enterprise.lang-model:4.0.1" />
-          <element id="library" level="project" name="Gradle: jakarta.inject:jakarta.inject-api:2.0.1" />
-          <element id="library" level="project" name="Gradle: org.eclipse.persistence:org.eclipse.persistence.asm:9.1.0" />
-          <element id="library" level="project" name="Gradle: org.eclipse.persistence:org.eclipse.persistence.core:3.0.2" />
-          <element id="library" level="project" name="Gradle: org.eclipse.persistence:org.eclipse.persistence.jpa.jpql:3.0.2" />
-          <element id="library" level="project" name="Gradle: com.github.waffle:waffle-jna:3.2.0" />
-          <element id="library" level="project" name="Gradle: org.glassfish.jersey.containers:jersey-container-servlet-core:3.1.2" />
-          <element id="library" level="project" name="Gradle: org.glassfish.jersey.core:jersey-server:3.1.2" />
-          <element id="library" level="project" name="Gradle: org.glassfish.jersey.core:jersey-common:3.1.2" />
-          <element id="library" level="project" name="Gradle: org.glassfish.jersey.ext:jersey-entity-filtering:3.1.2" />
-          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.module:jackson-module-jakarta-xmlbind-annotations:2.14.1" />
-          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.14.1" />
-          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.14.1" />
-          <element id="library" level="project" name="Gradle: jakarta.xml.bind:jakarta.xml.bind-api:4.0.0" />
-          <element id="library" level="project" name="Gradle: org.jboss.weld.environment:weld-environment-common:5.1.0.Final" />
-          <element id="library" level="project" name="Gradle: org.jboss.weld:weld-lite-extension-translator:5.1.0.Final" />
-          <element id="library" level="project" name="Gradle: org.jboss.classfilewriter:jboss-classfilewriter:1.2.5.Final" />
-          <element id="library" level="project" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.36" />
-          <element id="library" level="project" name="Gradle: net.java.dev.jna:jna-platform:5.12.1" />
-          <element id="library" level="project" name="Gradle: net.java.dev.jna:jna:5.12.1" />
-          <element id="library" level="project" name="Gradle: com.github.ben-manes.caffeine:caffeine:2.9.3" />
-          <element id="library" level="project" name="Gradle: org.checkerframework:checker-qual:3.23.0" />
-          <element id="library" level="project" name="Gradle: org.glassfish.jersey.core:jersey-client:3.1.2" />
-          <element id="library" level="project" name="Gradle: org.glassfish.hk2:osgi-resource-locator:1.0.3" />
-          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.14.1" />
-          <element id="library" level="project" name="Gradle: jakarta.activation:jakarta.activation-api:2.1.0" />
-          <element id="library" level="project" name="Gradle: org.jboss.weld:weld-core-impl:5.1.0.Final" />
-          <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging-processor:2.2.1.Final" />
-          <element id="library" level="project" name="Gradle: com.google.errorprone:error_prone_annotations:2.10.0" />
-          <element id="library" level="project" name="Gradle: org.jboss.weld:weld-spi:5.0.SP3" />
-          <element id="library" level="project" name="Gradle: org.jboss.weld:weld-api:5.0.SP3" />
-          <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging:3.5.0.Final" />
-          <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging-annotations:2.2.1.Final" />
-          <element id="library" level="project" name="Gradle: org.jboss.jdeparser:jdeparser:2.0.3.Final" />
-          <element id="library" level="project" name="Gradle: jakarta.persistence:jakarta.persistence-api:3.0.0" />
-          <element id="library" level="project" name="Gradle: org.glassfish.jersey.inject:jersey-cdi2-se:3.1.2" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.jpa/3.0.2/7df616b6d86d10c3ead27d1b76a473fe435da5e0/org.eclipse.persistence.jpa-3.0.2.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.mariadb.jdbc/mariadb-java-client/3.2.0/60848ec1bfea9449d5acd2bd2025d712ace7fdcc/mariadb-java-client-3.2.0.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/2.0.9/6367825de95d8885aae056afa793f25a76a84b7d/slf4j-simple-2.0.9.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/com.github.waffle/waffle-jna/3.2.0/6ac5882dea3a15575237ef5d1793c51279ae1335/waffle-jna-3.2.0.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.36/d877e195a05aca4a2f1ad2ff14bfec1393af4b5e/jcl-over-slf4j-1.7.36.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.9/7cf2726fdcfbc8610f9a71fb3ed639871f315340/slf4j-api-2.0.9.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet/3.1.2/45a7d6a7a4c86929f5f38a48dfbe3dc5d26ce057/jersey-container-servlet-3.1.2.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.glassfish.jersey.inject/jersey-cdi2-se/3.1.2/63350a76849d0cb7483a4e1283db76d1e264158d/jersey-cdi2-se-3.1.2.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-json-jackson/3.1.2/b16c645be68656bfa96071862b50334774d85c4b/jersey-media-json-jackson-3.1.2.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.jboss.weld.se/weld-se-core/5.1.0.Final/eccfc68c4142e83c2d4892c067501f486eba36a3/weld-se-core-5.1.0.Final.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.asm/9.1.0/8d54ede9c97875a52ebad2674d8c86232a395128/org.eclipse.persistence.asm-9.1.0.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.core/3.0.2/2770d84dc54cfde22a4dfee7669ffcaabcda22df/org.eclipse.persistence.core-3.0.2.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.eclipse.persistence/org.eclipse.persistence.jpa.jpql/3.0.2/32d7afe9ee9525c275b81c7b7a5a8fc3dbca595c/org.eclipse.persistence.jpa.jpql-3.0.2.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/jakarta.persistence/jakarta.persistence-api/3.0.0/affc7884a85b6876d438a88b5d21ea29b1cc2dd8/jakarta.persistence-api-3.0.0.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/3.1.2/9778d0ed2372891b015204654423d924ac4970b3/jersey-container-servlet-core-3.1.2.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/3.1.2/38b949231a02677045e12be2e07c782550c703ec/jersey-server-3.1.2.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/3.1.2/3e14ce91dd2df2393a7c57c0fab5311ed5083676/jersey-client-3.1.2.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/3.1.2/b0967dc02c1251bd0551f79a08481ae817b6e778/jersey-common-3.1.2.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-entity-filtering/3.1.2/7c7ce90ef167125bf1df72f1889460d2c488cbc3/jersey-entity-filtering-3.1.2.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/jakarta.ws.rs/jakarta.ws.rs-api/3.1.0/15ce10d249a38865b58fc39521f10f29ab0e3363/jakarta.ws.rs-api-3.1.0.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.jboss.weld.environment/weld-environment-common/5.1.0.Final/e7b149394f20ecb80db2a173b3162f55c858c31e/weld-environment-common-5.1.0.Final.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.jboss.weld/weld-lite-extension-translator/5.1.0.Final/69eacb4c04168dc7847f4016025b8c153d34494f/weld-lite-extension-translator-5.1.0.Final.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.jboss.weld/weld-core-impl/5.1.0.Final/bc74dce2a67f74aa2c20a12369fa75a601e3085d/weld-core-impl-5.1.0.Final.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.5.0.Final/c19307cc11f28f5e2679347e633a3294d865334d/jboss-logging-3.5.0.Final.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.jboss.weld/weld-spi/5.0.SP3/e24b5f540396d389849088e7c29c5cf6c345bdf7/weld-spi-5.0.SP3.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.jboss.weld/weld-api/5.0.SP3/d912a98b3753c170efdb929b21a0b34f535063e9/weld-api-5.0.SP3.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/jakarta.enterprise/jakarta.enterprise.cdi-api/4.0.1/2012f388c6de83e29101cbf82c3ed2bd37931c64/jakarta.enterprise.cdi-api-4.0.1.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.14.1/7a07bc535ccf0b7f6929c4d0f2ab9b294ef7c4a3/jackson-core-2.14.1.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jakarta-xmlbind-annotations/2.14.1/dd91ea111e70c394619feb251dc2e0a70a634a7d/jackson-module-jakarta-xmlbind-annotations-2.14.1.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.14.1/268524b9056cae1211b9f1f52560ef19347f4d17/jackson-databind-2.14.1.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.14.1/2a6ad504d591a7903ffdec76b5b7252819a2d162/jackson-annotations-2.14.1.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/4.0.0/bbb399208d288b15ec101fa4fcfc4bd77cedc97a/jakarta.xml.bind-api-4.0.0.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.jboss.classfilewriter/jboss-classfilewriter/1.2.5.Final/a0340f52f4b8ff873f64a7c3c94bdc69c8ccb443/jboss-classfilewriter-1.2.5.Final.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.12.1/97406a297c852f4a41e688a176ec675f72e8329/jna-platform-5.12.1.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.12.1/b1e93a735caea94f503e95e6fe79bf9cdc1e985d/jna-5.12.1.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/com.github.ben-manes.caffeine/caffeine/2.9.3/b162491f768824d21487551873f9b3b374a7fe19/caffeine-2.9.3.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.23.0/2ce274da87ae21d940ded7b827d9069206ea3001/checker-qual-3.23.0.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/jakarta.inject/jakarta.inject-api/2.0.1/4c28afe1991a941d7702fe1362c365f0a8641d1e/jakarta.inject-api-2.0.1.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/jakarta.interceptor/jakarta.interceptor-api/2.1.0/1d06a662708601400af4556577ee514c4ad01549/jakarta.interceptor-api-2.1.0.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/2.1.1/48b9bda22b091b1f48b13af03fe36db3be6e1ae3/jakarta.annotation-api-2.1.1.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.3/de3b21279df7e755e38275137539be5e2c80dd58/osgi-resource-locator-1.0.3.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/jakarta.validation/jakarta.validation-api/3.0.2/92b6631659ba35ca09e44874d3eb936edfeee532/jakarta.validation-api-3.0.2.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/jakarta.enterprise/jakarta.enterprise.lang-model/4.0.1/2b195781faad31c1724d8122136909c34c3ae79e/jakarta.enterprise.lang-model-4.0.1.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/jakarta.el/jakarta.el-api/5.0.1/6f46fb9143b18b7956806a657275fc41376d1a50/jakarta.el-api-5.0.1.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/2.1.0/a58861b5deac5e151140511cf57d6b80a83f2d20/jakarta.activation-api-2.1.0.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging-processor/2.2.1.Final/271a8e01caec4017d7a5104ef0b24390b4b06711/jboss-logging-processor-2.2.1.Final.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.10.0/9bc20b94d3ac42489cf6ce1e42509c86f6f861a1/error_prone_annotations-2.10.0.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging-annotations/2.2.1.Final/ee3db82d956ee22c4f1f2df9c611e048e79a4a43/jboss-logging-annotations-2.2.1.Final.jar" />
+          <element id="file-copy" path="C:/gradle-8.2.1/caches/modules-2/files-2.1/org.jboss.jdeparser/jdeparser/2.0.3.Final/f1982f9caa0ed8a2663d4c648aaa9a82d14eb962/jdeparser-2.0.3.Final.jar" />
         </element>
       </element>
     </root>

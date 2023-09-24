@@ -1,13 +1,16 @@
-package vn.edu.iuh.fit.models;
+package vn.edu.iuh.fit.backend.models;
 
 import jakarta.persistence.*;
-import vn.edu.iuh.fit.enums.ProductStatus;
+import vn.edu.iuh.fit.backend.enums.ProductStatus;
 
 import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "product")
+//@NamedQueries(
+//        @NamedQueries( name = "PRODUCT.findAll", query = "select p from Product p where p.status = 1")
+//)
 public class Product implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id

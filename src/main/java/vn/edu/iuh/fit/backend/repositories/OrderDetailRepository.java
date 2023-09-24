@@ -1,27 +1,28 @@
-package vn.edu.iuh.fit.repositories;
+package vn.edu.iuh.fit.backend.repositories;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import vn.edu.iuh.fit.models.ProductImage;
+import vn.edu.iuh.fit.backend.models.OrderDetail;
+
 import java.util.Optional;
 
-public class ProductImageRepository {
+public class OrderDetailRepository {
     private EntityManager em;
     private EntityTransaction transaction;
     private final Logger LOGGER = LoggerFactory.getLogger(this.getClass().getName());
 
-    public ProductImageRepository() {
+    public OrderDetailRepository() {
         em = Persistence.createEntityManagerFactory("my_persistence_unit").createEntityManager();
         transaction = em.getTransaction();
     }
 
-    public void insertProductImage(ProductImage productImage) {
+    public void insertOrderDetail(OrderDetail orderDetail) {
         try {
             transaction.begin();
-            em.persist(productImage);
+            em.persist(orderDetail);
             transaction.commit();
         } catch (Exception e) {
             transaction.rollback();
@@ -29,10 +30,10 @@ public class ProductImageRepository {
         }
     }
 
-    public void updateProductImage(ProductImage productImage) {
+    public void updateOrderDetail(OrderDetail orderDetail) {
         try {
             transaction.begin();
-            em.merge(productImage);
+            em.merge(orderDetail);
             transaction.commit();
         } catch (Exception e) {
             transaction.rollback();
@@ -40,10 +41,10 @@ public class ProductImageRepository {
         }
     }
 
-    public void deleteProductImage(ProductImage productImage) {
+    public void deleteOrderDetail(OrderDetail orderDetail) {
         try {
             transaction.begin();
-            em.remove(productImage);
+            em.remove(orderDetail);
             transaction.commit();
         } catch (Exception e) {
             transaction.rollback();
@@ -51,7 +52,8 @@ public class ProductImageRepository {
         }
     }
 
-    public Optional<ProductImage> findProductImage(long id) {
-        return Optional.ofNullable(em.find(ProductImage.class, id));
+    public Optional<OrderDetail> findOrderDetail(long id) {
+        return Optional.ofNullable(em.find(OrderDetail.class, id));
     }
+
 }

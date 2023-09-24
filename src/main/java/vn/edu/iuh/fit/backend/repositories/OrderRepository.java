@@ -1,28 +1,27 @@
-package vn.edu.iuh.fit.repositories;
+package vn.edu.iuh.fit.backend.repositories;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import vn.edu.iuh.fit.models.Product;
+import vn.edu.iuh.fit.backend.models.Order;
 
 import java.util.Optional;
 
-public class ProductRepository {
+public class OrderRepository {
     private EntityManager em;
     private EntityTransaction transaction;
-
     private final Logger LOGGER = LoggerFactory.getLogger(this.getClass().getName());
-    public ProductRepository() {
+    public OrderRepository() {
         em = Persistence.createEntityManagerFactory("my_persistence_unit").createEntityManager();
         transaction = em.getTransaction();
     }
 
-    public void insertProduct(Product product) {
+    public void insertOrder(Order order){
         try {
             transaction.begin();
-            em.persist(product);
+            em.persist(order);
             transaction.commit();
         } catch (Exception e) {
             transaction.rollback();
@@ -30,10 +29,10 @@ public class ProductRepository {
         }
     }
 
-    public void updateProduct(Product product) {
+    public void updateOrder(Order order){
         try {
             transaction.begin();
-            em.merge(product);
+            em.merge(order);
             transaction.commit();
         } catch (Exception e) {
             transaction.rollback();
@@ -41,10 +40,10 @@ public class ProductRepository {
         }
     }
 
-    public void deleteProduct(Product product) {
+    public void deleteOrder(Order order){
         try {
             transaction.begin();
-            em.remove(product);
+            em.remove(order);
             transaction.commit();
         } catch (Exception e) {
             transaction.rollback();
@@ -52,9 +51,10 @@ public class ProductRepository {
         }
     }
 
-    public Optional<Product> findProduct(long id) {
-        return Optional.ofNullable(em.find(Product.class, id));
+    public Optional<Order> findOrder(long id){
+        return Optional.ofNullable(em.find(Order.class, id));
     }
+
 
 
 }

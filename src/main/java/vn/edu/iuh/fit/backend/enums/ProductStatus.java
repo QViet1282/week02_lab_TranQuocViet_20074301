@@ -1,6 +1,4 @@
-package vn.edu.iuh.fit.enums;
-
-import vn.edu.iuh.fit.models.Product;
+package vn.edu.iuh.fit.backend.enums;
 
 public enum ProductStatus {
     ACTIVE(1),

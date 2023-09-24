@@ -1,11 +1,10 @@
-package vn.edu.iuh.fit.models;
+package vn.edu.iuh.fit.backend.models;
 
 import jakarta.persistence.*;
-import vn.edu.iuh.fit.enums.EmployeeStatus;
+import vn.edu.iuh.fit.backend.enums.EmployeeStatus;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 @Entity
