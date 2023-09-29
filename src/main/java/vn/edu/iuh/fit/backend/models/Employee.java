@@ -9,6 +9,9 @@ import java.util.List;
 
 @Entity
 @Table(name = "employee")
+@NamedQueries(
+        @NamedQuery(name = "Employee.findAll",query = "SELECT e FROM Employee e where e.status = 1")
+)
 public class Employee implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
@@ -26,6 +29,7 @@ public class Employee implements Serializable {
     @Column(name = "phone",columnDefinition = "VARCHAR(15)")
     private String phone;
     @Column(name = "status",columnDefinition = "INT(15)")
+    @Enumerated(EnumType.ORDINAL)
     private EmployeeStatus status;
     @OneToMany(mappedBy = "employee",cascade = CascadeType.ALL)
     private List<Order> lstOrder;

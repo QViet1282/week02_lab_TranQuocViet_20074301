@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import vn.edu.iuh.fit.backend.models.Employee;
 
+import java.util.List;
 import java.util.Optional;
 
 public class EmployeeRepository {
@@ -43,21 +44,25 @@ public class EmployeeRepository {
         }
     }
 
-    public void deleteEmployee(Employee employee){
+    public boolean deleteEmployee(long id){
         try {
             transaction.begin();
-            em.remove(employee);
+            em.remove(em.find(Employee.class,id));
             transaction.commit();
         } catch (Exception e) {
             transaction.rollback();
             LOGGER.error(e.getMessage());
+            return false;
         }
+        return true;
     }
 
     public Optional<Employee> findEmployee(long id){
         return Optional.ofNullable(em.find(Employee.class, id));
     }
 
-
+    public List<Employee> getAllEmployee(){
+        return em.createNamedQuery("Employee.findAll",Employee.class).getResultList();
+    }
 
 }
